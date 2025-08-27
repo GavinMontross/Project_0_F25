@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-
-char* rand_string(char *s, size_t size){
-    for (int i = 0; i < size; i ++){
-        s[i] = 'A' + (rand() % 26);
-    }    
-    s[size] = '\0';
-    return s;
-}
+#include "random.c"
 // random string generator wrapper function
 char* rand_string_alloc(size_t size)
 {
